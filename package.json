@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A tiny game written in `angular2`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
-    "start": "webpack-dev-server --hot --host 0.0.0.0 --port 8080"
+    "start": "webpack-dev-server --content-base build/ --hot --host 0.0.0.0 --port 8080"
   },
   "repository": {
     "type": "git",

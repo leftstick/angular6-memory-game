@@ -6,8 +6,9 @@ module.exports = {
         index: './ts/index.ts'
     },
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: '[name].[hash].bundle.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
+        publicPath: '/'
     },
     debug: true,
     devtool: '#eval-source-map',
@@ -42,7 +43,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             inject: 'body',
-            template: 'index.html_vm',
+            template: 'index.html',
             favicon: 'img/favicon.ico',
             hash: false
         })
