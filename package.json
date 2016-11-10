@@ -1,0 +1,41 @@
+{
+  "name": "angular2-memory-game",
+  "version": "1.0.0",
+  "description": "A tiny game written in `angular2`. It's inspired by IgorMinar's Memory-Game",
+  "scripts": {
+    "start": "webpack-dev-server --hot --host 0.0.0.0 --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leftstick/angular2-memory-game.git"
+  },
+  "keywords": [
+    "angular2",
+    "memory-game"
+  ],
+  "author": "Howard.Zuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leftstick/angular2-memory-game/issues"
+  },
+  "homepage": "https://github.com/leftstick/angular2-memory-game#readme",
+  "dependencies": {
+    "@angular/common": "^2.1.2",
+    "@angular/compiler": "^2.1.2",
+    "@angular/core": "^2.1.2",
+    "@angular/platform-browser": "^2.1.2",
+    "@angular/platform-browser-dynamic": "^2.1.2",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "splash-screen": "^3.0.1",
+    "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "html-webpack-plugin": "^2.24.1",
+    "ts-loader": "^1.1.0",
+    "typescript": "^2.0.8",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
