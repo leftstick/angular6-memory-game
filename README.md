@@ -9,7 +9,7 @@ We choose [webpack](http://webpack.github.io/) as bundling tool taking the place
 
 ## Components Tree ##
 
-![](https://raw.githubusercontent.com/leftstick/angular2-memory-game/master/docs/img/components.png)
+![](https://raw.githubusercontent.com/leftstick/angular2-memory-game/master/doc/img/components.png)
 
 
 ## Components break down ##
