@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/leftstick/angular2-memory-game#readme",
   "dependencies": {
-    "@angular/common": "^2.1.2",
-    "@angular/compiler": "^2.1.2",
-    "@angular/core": "^2.1.2",
-    "@angular/platform-browser": "^2.1.2",
-    "@angular/platform-browser-dynamic": "^2.1.2",
+    "@angular/common": "^2.2.0",
+    "@angular/compiler": "^2.2.0",
+    "@angular/core": "^2.2.0",
+    "@angular/platform-browser": "^2.2.0",
+    "@angular/platform-browser-dynamic": "^2.2.0",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-beta.12",
     "splash-screen": "^3.0.1",
@@ -32,9 +32,11 @@
   },
   "devDependencies": {
     "@types/core-js": "^0.9.34",
+    "css-loader": "^0.25.0",
     "html-webpack-plugin": "^2.24.1",
-    "ts-loader": "^1.1.0",
-    "typescript": "^2.0.8",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^1.2.1",
+    "typescript": "^2.0.10",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
   }
