@@ -5,10 +5,17 @@ import { Component, OnInit } from '@angular/core';
     template: `
         <div class="game-panel">
             <!-- 组装上、中、下三个部分组件 -->
-            leftstick
+            <h2>leftstick</h2>
         </div>
     `,
     styles: [`
+        memory-game:host {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .game-panel {
             width: 450px;
             height: 670px;

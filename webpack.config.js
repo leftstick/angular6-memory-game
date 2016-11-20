@@ -18,14 +18,6 @@ module.exports = {
                 test: /\.ts$/,
                 loader: '@angularclass/hmr-loader!ts',
                 exclude: /node_modules/
-            },
-            {
-                test: /\.css$/,
-                loader: 'style/useable!css'
-            },
-            {
-                test: /\.(png)$/,
-                loader: 'file'
             }
         ]
     },
