@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A tiny game written in `angular2`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --no-info --host 0.0.0.0 --port 8080"
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --port 8080"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,6 @@
     "@angular/platform-browser-dynamic": "^2.2.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-beta.12",
-    "splash-screen": "^3.0.1",
     "zone.js": "^0.6.26"
   },
   "devDependencies": {

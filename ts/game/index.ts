@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
         </div>
     `,
     styles: [`
-        .game-panel{
+        .game-panel {
             width: 450px;
             height: 670px;
             border: 4px solid #BDBDBD;
@@ -19,15 +19,12 @@ import { Component, OnInit } from '@angular/core';
             display: flex;
             flex-direction: column;
         }
-
         @media screen and (max-width: 450px) {
-            .game-panel{
+            .game-panel {
                 width: 100%;
                 height: 100%;
-                justify-content: space-around;
             }
-        }
-    `]
+        }`]
 })
 export default class MemoryGame implements OnInit {
 

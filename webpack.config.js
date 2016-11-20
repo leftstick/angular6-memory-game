@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const {ForkCheckerPlugin, TsConfigPathsPlugin} = require('awesome-typescript-loader');
 
 module.exports = {
     entry: {
@@ -17,7 +16,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.ts$/,
-                loader: '@angularclass/hmr-loader!awesome-typescript-loader',
+                loader: '@angularclass/hmr-loader!ts',
                 exclude: /node_modules/
             },
             {
@@ -41,8 +40,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new TsConfigPathsPlugin( /* { tsconfig, compiler } */ ),
-        new ForkCheckerPlugin(),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             inject: 'body',
