@@ -33,9 +33,8 @@
     "@angularclass/hmr": "^1.2.2",
     "@angularclass/hmr-loader": "^3.0.2",
     "@types/core-js": "^0.9.34",
-    "awesome-typescript-loader": "^2.2.4",
     "html-webpack-plugin": "^2.24.1",
-    "ts-loader": "^1.2.1",
+    "ts-loader": "^1.2.2",
     "typescript": "^2.0.10",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
