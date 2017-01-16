@@ -1,42 +1,50 @@
-const path = require('path');
+const {resolve} = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: './ts/index.ts'
+        polyfills: resolve(__dirname, 'ts', 'core', 'ext', 'polyfills.ts'),
+        vendor: resolve(__dirname, 'ts', 'core', 'ext', 'vendor.ts'),
+        app: resolve(__dirname, 'ts', 'index.ts')
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        path: resolve(__dirname, 'build'),
+        filename: '[name].bundle.js',
+        chunkFilename: '[id].bundle.js',
         publicPath: '/'
     },
-    debug: true,
-    devtool: '#eval-source-map',
+    devtool: '#eval',
+    devServer: {
+        historyApiFallback: false,
+        stats: 'minimal'
+    },
+    resolve: {
+        extensions: ['', '.ts', '.js']
+    },
     module: {
         loaders: [
             {
                 test: /\.ts$/,
-                loader: '@angularclass/hmr-loader!ts',
-                exclude: /node_modules/
+                loader: 'ts!tslint'
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+                loader: 'file?name=assets/[name].[hash].[ext]'
             }
         ]
     },
-    resolve: {
-        root: [
-            path.resolve(__dirname)
-        ],
-        extensions: [
-            '',
-            '.js',
-            '.ts'
-        ]
-    },
+
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: ['app', 'vendor', 'polyfills']
+        }),
+
         new HtmlWebpackPlugin({
             filename: 'index.html',
             inject: 'body',
-            template: 'index.html',
-            favicon: 'img/favicon.ico',
+            template: resolve(__dirname, 'index.html'),
+            favicon: resolve(__dirname, 'img', 'favicon.ico'),
             hash: false
         })
     ]
