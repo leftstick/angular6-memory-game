@@ -27,6 +27,8 @@
     "@angular/platform-browser-dynamic": "^2.4.3",
     "@angular/router": "^3.4.3",
     "core-js": "^2.4.1",
+    "ng2-redux": "^5.1.0",
+    "redux": "^3.6.0",
     "rxjs": "^5.0.3",
     "zone.js": "^0.7.5"
   },

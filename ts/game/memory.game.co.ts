@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'memory-game',
     template: `
-    fuck
+    <dashboard></dashboard>
     `,
     styles: [`
     :host {
