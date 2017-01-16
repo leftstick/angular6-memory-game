@@ -8,6 +8,7 @@ import { DashboardComponent } from './components/dashboard';
 import { LogoComponent } from './components/dashboard/logo.co';
 import { MatchInfoComponent } from './components/dashboard/matchInfo.co';
 import { ScoreComponent } from './components/dashboard/score.co';
+import { ChessboardComponent } from './components/chessboard';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ScoreComponent } from './components/dashboard/score.co';
         DashboardComponent,
         LogoComponent,
         MatchInfoComponent,
-        ScoreComponent
+        ScoreComponent,
+        ChessboardComponent
     ],
     bootstrap: [MemoryGameComponent]
 })
