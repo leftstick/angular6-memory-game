@@ -29,7 +29,7 @@ module.exports = {
                 loader: 'ts!tslint'
             },
             {
-                test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+                test: /\.(png)$/,
                 loader: 'file?name=assets/[name].[hash].[ext]'
             }
         ]

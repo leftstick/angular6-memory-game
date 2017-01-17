@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { select } from 'ng2-redux';
+import { Observable } from 'rxjs/Observable';
+
+import { GameActions } from '../../../store/action';
+import { ICard } from '../../../store/model/card';
 
 @Component({
     selector: 'chessboard',
     template: `
-    
+    <card *ngFor="let card of cards$ | async" [info]="card" (flipped)="actions.flipCard($event)"></card>
     `,
     styles: [`
     :host {
@@ -19,7 +24,7 @@ import { Component } from '@angular/core';
         align-items: center;
         align-content: space-around;
     }
-    .container:nth-child(4n) {
+    card:nth-child(4n) {
         margin-right: 0px;
     }
     @media screen and (max-width: 450px) {
@@ -35,4 +40,10 @@ import { Component } from '@angular/core';
     }
     `]
 })
-export class ChessboardComponent { }
+export class ChessboardComponent {
+
+    @select() cards$: Observable<ICard[]>;
+
+    constructor(private actions: GameActions) { }
+
+}

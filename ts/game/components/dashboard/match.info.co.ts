@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { select } from 'ng2-redux';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
     selector: 'match-info',
     template: `
     <span>Remains</span>
-    <h2>{{ remains }}</h2>
+    <h2>{{ remains$ | async }}</h2>
     `,
     styles: [`
     :host {
@@ -46,4 +48,7 @@ import { Component } from '@angular/core';
     }
     `]
 })
-export class MatchInfoComponent { }
+export class MatchInfoComponent {
+
+    @select() remains$: Observable<Number>;
+}

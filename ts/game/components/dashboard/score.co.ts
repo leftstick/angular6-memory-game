@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { select } from 'ng2-redux';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
     selector: 'score',
     template: `
     <span>Top</span>
-    <h2>{{ highestSpeed }}</h2>
+    <h2>{{ highestSpeed$ | async }}</h2>
     `,
     styles: [`
     :host {
@@ -46,4 +48,6 @@ import { Component } from '@angular/core';
     }
     `]
 })
-export class ScoreComponent { }
+export class ScoreComponent {
+    @select() highestSpeed$: Observable<Number>;
+}

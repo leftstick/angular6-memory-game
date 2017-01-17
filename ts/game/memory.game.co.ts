@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
 
+import { GameActions } from '../store/action';
+import { STATUS } from '../store/model/status';
+
 @Component({
     selector: 'memory-game',
     template: `
     <dashboard></dashboard>
+    <chessboard></chessboard>
+    <status></status>
     `,
     styles: [`
     :host {
@@ -25,4 +30,9 @@ import { Component } from '@angular/core';
     }
     `]
 })
-export class MemoryGameComponent { }
+export class MemoryGameComponent {
+    constructor(public actions: GameActions) {
+        this.actions.updateStatus(STATUS.READY);
+        this.actions.reset();
+    }
+}
