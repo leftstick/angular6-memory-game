@@ -25,7 +25,7 @@ module.exports = {
             },
             {
                 test: /\.(png)$/,
-                loader: 'file?name=assets/[name].[hash].[ext]'
+                loader: 'file?name=[name].[hash].[ext]'
             }
         ]
     },
