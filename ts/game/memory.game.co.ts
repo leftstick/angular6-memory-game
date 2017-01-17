@@ -28,6 +28,10 @@ import { STATUS } from '../store/model/status';
             justify-content: space-around;
         }
     }
+    >>> a {
+        text-decoration: none;
+        color: #fff;
+    }
     `]
 })
 export class MemoryGameComponent {

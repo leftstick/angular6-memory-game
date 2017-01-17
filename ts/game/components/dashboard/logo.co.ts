@@ -8,17 +8,13 @@ import { Component } from '@angular/core';
     styles: [`
     :host {
         width: 160px;
-        height: 100px;
-        line-height: 90px;
         padding: 5px;
         border-radius: 5px;
         background-color: #5979ac;
         color: #fff;
-        text-align: center;
-    }
-    a {
-        text-decoration: none;
-        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     @media screen and (max-width: 450px) {
         :host {

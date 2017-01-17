@@ -1,17 +1,14 @@
-import { Component } from '@angular/core';
-import { select } from 'ng2-redux';
-import { Observable } from 'rxjs/Observable';
+import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'score',
+    selector: 'info-board',
     template: `
-    <span>Top</span>
-    <h2>{{ highestSpeed$ | async }}</h2>
+    <span>{{ title }}</span>
+    <h2>{{ text }}</h2>
     `,
     styles: [`
     :host {
         width: 120px;
-        height: 100px;
         padding: 10px;
         background-color: #bbada0;
         border-radius: 5px;
@@ -48,6 +45,7 @@ import { Observable } from 'rxjs/Observable';
     }
     `]
 })
-export class ScoreComponent {
-    @select() highestSpeed$: Observable<Number>;
+export class InfoBoardComponent {
+    @Input() title: String;
+    @Input() text: String;
 }

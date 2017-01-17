@@ -6,8 +6,7 @@ import { ReduxConfigModule } from '../store';
 import { MemoryGameComponent } from './memory.game.co';
 import { DashboardComponent } from './components/dashboard';
 import { LogoComponent } from './components/dashboard/logo.co';
-import { MatchInfoComponent } from './components/dashboard/match.info.co';
-import { ScoreComponent } from './components/dashboard/score.co';
+import { InfoBoardComponent } from './components/dashboard/info.board.co';
 import { ChessboardComponent } from './components/chessboard';
 import { CardComponent } from './components/chessboard/card.co';
 import { StatusComponent } from './components/status';
@@ -23,8 +22,7 @@ import { GameActions } from '../store/action';
         MemoryGameComponent,
         DashboardComponent,
         LogoComponent,
-        MatchInfoComponent,
-        ScoreComponent,
+        InfoBoardComponent,
         ChessboardComponent,
         CardComponent,
         StatusComponent
