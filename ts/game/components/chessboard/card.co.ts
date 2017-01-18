@@ -7,7 +7,6 @@ import { ICard, CARDS } from '../../../store/model/card';
     template: `
     <div class="card" [class.flipped]="info.flipped" (click)="flip(info)">
         <img class="front" src="{{ info.url }}"/>
-
         <img class="back" src="{{ backCard.url }}"/>
     </div>
     `,
