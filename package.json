@@ -4,7 +4,6 @@
   "description": "A tiny game written in `angular2`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --progress --host 0.0.0.0 --port 8080",
-    "aot": "ngc -p tsconfig.aot.json",
     "deploy": "rm -rf build && webpack --config webpack.config.prod.js && git checkout gh-pages && rm -f *.* && mv build/* ."
   },
   "repository": {
