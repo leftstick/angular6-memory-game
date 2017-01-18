@@ -16,6 +16,7 @@ import { Observable } from 'rxjs/Observable';
         display: flex;
         justify-content: space-between;
         align-items: stretch;
+        flex-shrink: 0;
     }
     `]
 })
