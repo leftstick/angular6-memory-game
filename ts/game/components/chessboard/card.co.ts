@@ -1,31 +1,23 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 import { ICard } from '../../../store/model/card';
 
-import * as URL_8BALL from '../../../../img/8-ball.png';
-import * as URL_BAKEDPOTATO from '../../../../img/baked-potato.png';
-import * as URL_DINOSAUR from '../../../../img/dinosaur.png';
-import * as URL_KRONOS from '../../../../img/kronos.png';
-import * as URL_ROCKET from '../../../../img/rocket.png';
-import * as URL_SKINNYUNICORN from '../../../../img/skinny-unicorn.png';
-import * as URL_THATGUY from '../../../../img/that-guy.png';
-import * as URL_ZEPPELIN from '../../../../img/zeppelin.png';
-import * as URL_BACK from '../../../../img/back.png';
+const r = require;
 
 @Component({
     selector: 'card',
     template: `
     <div class="card" [class.flipped]="info.flipped" (click)="flip(info)">
-        <img class="front" *ngIf="info.name === '8-ball'" src="${URL_8BALL}"/>
-        <img class="front" *ngIf="info.name === 'baked-potato'" src="${URL_BAKEDPOTATO}"/>
-        <img class="front" *ngIf="info.name === 'dinosaur'" src="${URL_DINOSAUR}"/>
-        <img class="front" *ngIf="info.name === 'kronos'" src="${URL_KRONOS}"/>
-        <img class="front" *ngIf="info.name === 'rocket'" src="${URL_ROCKET}"/>
-        <img class="front" *ngIf="info.name === 'skinny-unicorn'" src="${URL_THATGUY}"/>
-        <img class="front" *ngIf="info.name === 'that-guy'" src="${URL_SKINNYUNICORN}"/>
-        <img class="front" *ngIf="info.name === 'zeppelin'" src="${URL_ZEPPELIN}"/>
+        <img class="front" *ngIf="info.name === '8-ball'" src="${r('../../../../img/8-ball.png')}"/>
+        <img class="front" *ngIf="info.name === 'baked-potato'" src="${r('../../../../img/baked-potato.png')}"/>
+        <img class="front" *ngIf="info.name === 'dinosaur'" src="${r('../../../../img/dinosaur.png')}"/>
+        <img class="front" *ngIf="info.name === 'kronos'" src="${r('../../../../img/kronos.png')}"/>
+        <img class="front" *ngIf="info.name === 'rocket'" src="${r('../../../../img/rocket.png')}"/>
+        <img class="front" *ngIf="info.name === 'skinny-unicorn'" src="${r('../../../../img/skinny-unicorn.png')}"/>
+        <img class="front" *ngIf="info.name === 'that-guy'" src="${r('../../../../img/that-guy.png')}"/>
+        <img class="front" *ngIf="info.name === 'zeppelin'" src="${r('../../../../img/zeppelin.png')}"/>
 
-        <img class="back" src="${URL_BACK}"/>
+        <img class="back" src="${r('../../../../img/back.png')}"/>
     </div>
     `,
     styles: [`
@@ -84,14 +76,10 @@ import * as URL_BACK from '../../../../img/back.png';
     }
     `]
 })
-export class CardComponent implements OnInit {
-
+export class CardComponent {
     @Input() info: ICard;
 
     @Output() flipped = new EventEmitter();
-
-    ngOnInit() {
-    }
 
     flip(info: ICard) {
         if (info.flipped) {

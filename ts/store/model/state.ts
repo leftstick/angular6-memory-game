@@ -1,7 +1,7 @@
 import { STATUS } from '../model/status';
 import { ICard } from '../model/card';
 
-export class IState {
+export interface IState {
     remains?: Number;
     highestSpeed?: Number;
     status?: STATUS;

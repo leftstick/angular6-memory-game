@@ -11,7 +11,7 @@ import { STATUS } from '../../../store/model/status';
     template: `
     <span *ngIf="(status$ | async) === ${STATUS.READY}">Ready</span>
     <span *ngIf="(status$ | async) === ${STATUS.PLAYING}">Playing</span>
-    <a *ngIf="(status$ | async) === ${STATUS.PASS}" (click)="reset($event)" href>Play again</a>
+    <span class="hand" *ngIf="(status$ | async) === ${STATUS.PASS}" (click)="reset($event)">Play again</span>
     <span class="elapsed">{{ elapsedMs$ | async }} s</span>
     `,
     styles: [`
@@ -20,13 +20,12 @@ import { STATUS } from '../../../store/model/status';
         margin-top: 10px;
         width: 100%;
         height: 20px;
-        line-height: 20px;
         text-align: center;
         font-size: 18px;
         font-weight: bold;
     }
-    a {
-        text-decoration: none;
+    .hand {
+        cursor: pointer;
     }
     .elapsed {
         position: absolute;

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { NgRedux } from 'ng2-redux';
 
 import { isEmpty } from '../../core/helper/object';
-import { IState } from '../state';
+import { IState } from '../model/state';
 import { STATUS } from '../model/status';
 import { ICard } from '../model/card';
 

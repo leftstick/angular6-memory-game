@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { NgReduxModule, NgRedux } from 'ng2-redux';
 
-import { IState } from './state';
+import { IState } from './model/state';
 import { rootReducer } from './reducer';
 
 @NgModule({

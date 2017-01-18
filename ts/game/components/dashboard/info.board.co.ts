@@ -3,8 +3,8 @@ import { Component, Input } from '@angular/core';
 @Component({
     selector: 'info-board',
     template: `
-    <span>{{ title }}</span>
-    <h2>{{ text }}</h2>
+    <h2>{{ title }}</h2>
+    <h3 class="text">{{ text }}</h3>
     `,
     styles: [`
     :host {
@@ -18,16 +18,10 @@ import { Component, Input } from '@angular/core';
         align-items: center;
         color: #eae0d1;
     }
-    span {
-        font-size: 19px;
-        font-weight: bold;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    h2 {
+    .text {
         color: #fff;
     }
+
     @media screen and (max-width: 450px) {
         :host {
             width: 105px;
@@ -36,6 +30,9 @@ import { Component, Input } from '@angular/core';
     @media screen and (max-width: 380px) {
         :host {
             width: 95px;
+        }
+        h2 {
+            font-size: 20px;
         }
     }
     @media screen and (max-width: 360px) {

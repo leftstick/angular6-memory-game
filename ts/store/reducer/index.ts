@@ -3,7 +3,7 @@ import { shuffle } from '../../core/helper/array';
 import { isEmpty, isUndefined } from '../../core/helper/object';
 import { STATUS } from '../model/status';
 import { CARDS, ICard } from '../model/card';
-import { IState } from '../state';
+import { IState } from '../model/state';
 import { GameActions } from '../action';
 
 export const rootReducer = combineReducers<IState>({

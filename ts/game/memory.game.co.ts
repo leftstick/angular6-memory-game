@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { GameActions } from '../store/action';
 import { STATUS } from '../store/model/status';
@@ -34,8 +34,10 @@ import { STATUS } from '../store/model/status';
     }
     `]
 })
-export class MemoryGameComponent {
-    constructor(public actions: GameActions) {
+export class MemoryGameComponent implements OnInit {
+    constructor(private actions: GameActions) { }
+
+    ngOnInit() {
         this.actions.updateStatus(STATUS.READY);
         this.actions.reset();
     }

@@ -1,14 +1,13 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import { select } from 'ng2-redux';
-import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
     selector: 'dashboard',
     template: `
     <logo></logo>
-    <info-board *ngIf="remains !== undefined" title="Remains" [text]="remains"></info-board>
-    <info-board *ngIf="highestSpeed !== undefined" title="Top" [text]="highestSpeed"></info-board>
+    <info-board title="Remains" [text]="remains$ | async"></info-board>
+    <info-board title="Top" [text]="highestSpeed$ | async"></info-board>
     `,
     styles: [`
     :host{
@@ -20,24 +19,7 @@ import { Observable } from 'rxjs/Observable';
     }
     `]
 })
-export class DashboardComponent implements OnInit, OnDestroy {
+export class DashboardComponent {
     @select() remains$: Observable<Number>;
     @select() highestSpeed$: Observable<Number>;
-
-    private remains: Number;
-    private highestSpeed: Number;
-    private subscriptions: Subscription[] = [];
-
-    ngOnInit() {
-        this.subscriptions.push(this.remains$.subscribe(val => {
-            this.remains = val;
-        }));
-        this.subscriptions.push(this.highestSpeed$.subscribe(val => {
-            this.highestSpeed = val;
-        }));
-    }
-
-    ngOnDestroy() {
-        this.subscriptions.forEach(s => s.unsubscribe());
-    }
 }
