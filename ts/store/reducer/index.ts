@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { shuffle } from '../../core/helper/array';
 import { isEmpty, isUndefined } from '../../core/helper/object';
 import { STATUS } from '../model/status';
-import { CARDS, ICard } from '../model/card';
+import { duplicateCards, ICard } from '../model/card';
 import { IState } from '../model/state';
 import { GameActions } from '../action';
 
@@ -52,11 +52,10 @@ export function statusReducer(state: STATUS, action: any) {
 
 export function cardsReducer(state: ICard[], action: any) {
     if (action.type === GameActions.RESET || isEmpty(state)) {
-        return shuffle(CARDS.concat(CARDS))
-            .map(name => ({ flipped: false, name }));
+        return shuffle(duplicateCards());
     }
     if (action.type === GameActions.UPDATE_CARD_FLIPPED) {
-        return state.map(c => c === action.payload ? (c.flipped = !c.flipped, c) : c);
+        return state.map(c => c._id === action.payload._id ? (c.flipped = !c.flipped, c) : c);
     }
     return state;
 }

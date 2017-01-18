@@ -9,9 +9,9 @@ import { STATUS } from '../../../store/model/status';
 @Component({
     selector: 'status',
     template: `
-    <span *ngIf="(status$ | async) === ${STATUS.READY}">Ready</span>
-    <span *ngIf="(status$ | async) === ${STATUS.PLAYING}">Playing</span>
-    <span class="hand" *ngIf="(status$ | async) === ${STATUS.PASS}" (click)="reset($event)">Play again</span>
+    <span *ngIf="(status$ | async) === status.READY">Ready</span>
+    <span *ngIf="(status$ | async) === status.PLAYING">Playing</span>
+    <span class="hand" *ngIf="(status$ | async) === status.PASS" (click)="reset($event)">Play again</span>
     <span class="elapsed">{{ elapsedMs$ | async }} s</span>
     `,
     styles: [`
@@ -39,7 +39,11 @@ export class StatusComponent {
     @select() status$: Observable<Number>;
     @select() elapsedMs$: Observable<Number>;
 
-    constructor(private actions: GameActions) { }
+    status: any;
+
+    constructor(private actions: GameActions) {
+        this.status = STATUS;
+    }
 
     reset(e: Event) {
         stop(e);

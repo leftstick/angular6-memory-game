@@ -1,23 +1,14 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-import { ICard } from '../../../store/model/card';
-
-const r = require;
+import { ICard, CARDS } from '../../../store/model/card';
 
 @Component({
     selector: 'card',
     template: `
     <div class="card" [class.flipped]="info.flipped" (click)="flip(info)">
-        <img class="front" *ngIf="info.name === '8-ball'" src="${r('../../../../img/8-ball.png')}"/>
-        <img class="front" *ngIf="info.name === 'baked-potato'" src="${r('../../../../img/baked-potato.png')}"/>
-        <img class="front" *ngIf="info.name === 'dinosaur'" src="${r('../../../../img/dinosaur.png')}"/>
-        <img class="front" *ngIf="info.name === 'kronos'" src="${r('../../../../img/kronos.png')}"/>
-        <img class="front" *ngIf="info.name === 'rocket'" src="${r('../../../../img/rocket.png')}"/>
-        <img class="front" *ngIf="info.name === 'skinny-unicorn'" src="${r('../../../../img/skinny-unicorn.png')}"/>
-        <img class="front" *ngIf="info.name === 'that-guy'" src="${r('../../../../img/that-guy.png')}"/>
-        <img class="front" *ngIf="info.name === 'zeppelin'" src="${r('../../../../img/zeppelin.png')}"/>
+        <img class="front" src="{{ info.url }}"/>
 
-        <img class="back" src="${r('../../../../img/back.png')}"/>
+        <img class="back" src="{{ backCard.url }}"/>
     </div>
     `,
     styles: [`
@@ -80,6 +71,12 @@ export class CardComponent {
     @Input() info: ICard;
 
     @Output() flipped = new EventEmitter();
+
+    backCard: ICard;
+
+    constructor() {
+        this.backCard = CARDS.find(c => c.name === 'back');
+    }
 
     flip(info: ICard) {
         if (info.flipped) {

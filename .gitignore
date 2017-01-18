@@ -4,3 +4,6 @@ npm-debug.log
 
 #build
 build/
+
+#osx
+.DS_Store
