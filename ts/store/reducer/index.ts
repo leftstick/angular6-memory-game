@@ -55,7 +55,7 @@ export function cardsReducer(state: ICard[], action: any) {
         return shuffle(duplicateCards());
     }
     if (action.type === GameActions.UPDATE_CARD_FLIPPED) {
-        return state.map(c => c._id === action.payload._id ? (c.flipped = !c.flipped, c) : c);
+        return state.map(c => c._id === action.payload._id ? { _id: c._id, name: c.name, flipped: !c.flipped, url: c.url } : c);
     }
     return state;
 }

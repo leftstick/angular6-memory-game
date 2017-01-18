@@ -8,7 +8,7 @@ import { ICard } from '../../../store/model/card';
 @Component({
     selector: 'chessboard',
     template: `
-    <card *ngFor="let card of cards$ | async" [info]="card" (flipped)="actions.flipCard($event)"></card>
+    <card *ngFor="let card of cards$ | async; trackBy:trackByCards" [info]="card" (flipped)="actions.flipCard($event)"></card>
     `,
     styles: [`
     :host {
@@ -46,4 +46,7 @@ export class ChessboardComponent {
 
     constructor(private actions: GameActions) { }
 
+    trackByCards(index: number, card: ICard) {
+        return card._id;
+    }
 }
