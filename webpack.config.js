@@ -8,6 +8,8 @@ module.exports = merge(commonConfig, {
     devtool: '#eval',
     devServer: {
         historyApiFallback: false,
-        stats: 'minimal'
+        stats: 'minimal',
+        port: 8080,
+        host: '0.0.0.0'
     }
 });

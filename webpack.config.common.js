@@ -14,17 +14,23 @@ module.exports = {
         chunkFilename: '[id].bundle.js'
     },
     resolve: {
-        extensions: ['', '.ts', '.js']
+        extensions: ['.ts', '.js']
     },
     module: {
-        loaders: [
+        exprContextCritical: false,
+        rules: [
             {
                 test: /\.ts$/,
-                loader: 'ts!tslint'
+                use: ['ts-loader', 'tslint-loader']
             },
             {
                 test: /\.(png)$/,
-                loader: 'file?name=[name].[hash].[ext]'
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[hash].[ext]'
+                    }
+                }]
             }
         ]
     },

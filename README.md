@@ -5,7 +5,7 @@ angular2-memory-game
 
 A tiny game written in `angular2`. It's inspired by IgorMinar's [Memory-Game](https://github.com/IgorMinar/Memory-Game). You can view the online demo [here](https://leftstick.github.io/angular2-memory-game).
 
-We choose [webpack](http://webpack.github.io/) as bundling tool taking the place of `System.js`.
+We choose [webpack](https://webpack.js.org/) as bundling tool taking the place of `System.js`.
 
 ## Components Tree ##
 
