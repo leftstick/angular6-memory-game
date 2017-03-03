@@ -4,7 +4,7 @@
   "description": "A tiny game written in `angular2`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
-    "deploy": "rm -rf build && webpack --config webpack.config.prod.js && git checkout gh-pages && rm -f *.* && mv build/* ."
+    "deploy": "rm -rf build && ngc -p tsconfig.aot.json && webpack --config webpack.config.prod.js && git checkout gh-pages && rm -f *.* && mv build/* ."
   },
   "repository": {
     "type": "git",
@@ -21,28 +21,30 @@
   },
   "homepage": "https://github.com/leftstick/angular2-memory-game#readme",
   "dependencies": {
-    "@angular/common": "^2.4.7",
-    "@angular/compiler": "^2.4.7",
-    "@angular/core": "^2.4.7",
-    "@angular/platform-browser": "^2.4.7",
-    "@angular/platform-browser-dynamic": "^2.4.7",
-    "@angular/router": "^3.4.7",
+    "@angular/common": "^2.4.9",
+    "@angular/compiler": "^2.4.9",
+    "@angular/compiler-cli": "^2.4.9",
+    "@angular/core": "^2.4.9",
+    "@angular/platform-browser": "^2.4.9",
+    "@angular/platform-browser-dynamic": "^2.4.9",
+    "@angular/platform-server": "^2.4.9",
+    "@angular/router": "^3.4.9",
     "core-js": "^2.4.1",
     "ng2-redux": "^5.1.2",
     "redux": "^3.6.0",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.7.6"
+    "rxjs": "^5.2.0",
+    "zone.js": "^0.7.7"
   },
   "devDependencies": {
     "@types/node": "^7.0.5",
-    "file-loader": "^0.10.0",
+    "file-loader": "^0.10.1",
     "html-webpack-plugin": "^2.28.0",
-    "ts-loader": "^2.0.0",
-    "tslint": "^4.4.2",
-    "tslint-loader": "^3.3.0",
-    "typescript": "^2.1.6",
+    "ts-loader": "^2.0.1",
+    "tslint": "^4.5.1",
+    "tslint-loader": "^3.4.3",
+    "typescript": "^2.2.1",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0",
-    "webpack-merge": "^2.6.1"
+    "webpack-dev-server": "^2.4.1",
+    "webpack-merge": "^3.0.0"
   }
 }

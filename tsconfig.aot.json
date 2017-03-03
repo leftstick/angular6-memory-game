@@ -10,5 +10,12 @@
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
         "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "ts/**/*"
+    ],
+    "angularCompilerOptions": {
+        "genDir": "aot",
+        "skipMetadataEmit" : true
     }
 }

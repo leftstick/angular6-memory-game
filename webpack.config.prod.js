@@ -5,8 +5,13 @@ const merge = require('webpack-merge');
 const commonConfig = require('./webpack.config.common');
 
 module.exports = merge(commonConfig, {
+    entry: {
+        polyfills: resolve(__dirname, 'ts', 'core', 'ext', 'polyfills.ts'),
+        vendor: resolve(__dirname, 'ts', 'core', 'ext', 'vendor.ts'),
+        app: resolve(__dirname, 'ts', 'index.aot.ts')
+    },
     output: {
-        publicPath: '/angular2-memory-game/'
+        publicPath: '/'
     },
     plugins: [
         new webpack.DefinePlugin({
