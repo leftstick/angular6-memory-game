@@ -11,7 +11,7 @@ module.exports = merge(commonConfig, {
         app: resolve(__dirname, 'ts', 'index.aot.ts')
     },
     output: {
-        publicPath: '/'
+        publicPath: '/angular2-memory-game/'
     },
     plugins: [
         new webpack.DefinePlugin({

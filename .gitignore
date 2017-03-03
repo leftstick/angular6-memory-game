@@ -5,6 +5,8 @@ npm-debug.log
 #build
 build/
 aot/
+ts/**/*.js
+ts/**/*.map
 
 #osx
 .DS_Store

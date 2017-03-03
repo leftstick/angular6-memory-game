@@ -1,5 +1,17 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "editor.formatOnSave": true,
-    "tslint.enable": true
+    "tslint.enable": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "ts/**/*.js": {
+            "when": "$(basename).ts"
+        },
+        "ts/**/*.map": {
+            "when": "$(basename).ts"
+        }
+    }
 }
