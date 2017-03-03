@@ -11,6 +11,9 @@ module.exports = merge(commonConfig, {
         app: resolve(__dirname, 'ts', 'index.aot.ts')
     },
     output: {
+        path: resolve(__dirname, 'build'),
+        filename: '[name].[hash].bundle.js',
+        chunkFilename: '[id].[hash].bundle.js',
         publicPath: '/angular2-memory-game/'
     },
     plugins: [
