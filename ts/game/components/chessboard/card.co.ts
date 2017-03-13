@@ -34,6 +34,7 @@ import { ICard, CARDS } from '../../../store/model/card';
         width: 100%;
         position: absolute;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
     .card .back {
         background: blue;
