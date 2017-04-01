@@ -21,14 +21,14 @@
   },
   "homepage": "https://github.com/leftstick/angular2-memory-game#readme",
   "dependencies": {
-    "@angular/common": "^2.4.9",
-    "@angular/compiler": "^2.4.9",
-    "@angular/compiler-cli": "^2.4.9",
-    "@angular/core": "^2.4.9",
-    "@angular/platform-browser": "^2.4.9",
-    "@angular/platform-browser-dynamic": "^2.4.9",
-    "@angular/platform-server": "^2.4.9",
-    "@angular/router": "^3.4.9",
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^2.4.10",
+    "@angular/compiler-cli": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "@angular/platform-browser": "^2.4.10",
+    "@angular/platform-browser-dynamic": "^2.4.10",
+    "@angular/platform-server": "^2.4.10",
+    "@angular/router": "^3.4.0",
     "core-js": "^2.4.1",
     "ng2-redux": "^5.1.2",
     "redux": "^3.6.0",
@@ -36,15 +36,15 @@
     "zone.js": "^0.7.8"
   },
   "devDependencies": {
-    "@types/node": "^7.0.8",
-    "file-loader": "^0.10.1",
+    "@types/node": "^7.0.12",
+    "file-loader": "^0.11.0",
     "html-webpack-plugin": "^2.28.0",
-    "ts-loader": "^2.0.1",
+    "ts-loader": "^2.0.3",
     "tslint": "^4.5.1",
     "tslint-loader": "^3.4.3",
-    "typescript": "^2.2.1",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1",
-    "webpack-merge": "^4.0.0"
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-merge": "^4.1.0"
   }
 }
