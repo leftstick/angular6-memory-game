@@ -10,7 +10,7 @@ import '@angular/common';
 import '@angular/router';
 
 //redux
-import 'ng2-redux';
+import '@angular-redux/store';
 
 // RxJS
 import 'rxjs';

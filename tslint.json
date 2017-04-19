@@ -1,15 +1,11 @@
 {
   "rules": {
     "no-unused-expression": true,
-    "no-unused-new": true,
-    "no-unused-variable": true,
     "semicolon": [true, "always"],
     "curly": true
   },
   "jsRules": {
     "no-unused-expression": true,
-    "no-unused-new": true,
-    "no-unused-variable": true,
     "semicolon": [true, "always"],
     "curly": true
   }

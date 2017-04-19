@@ -10,5 +10,10 @@
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
         "allowSyntheticDefaultImports": true
-    }
+    },
+    "exclude": [
+        "aot",
+        "ts/index.aot.ts",
+        "node_modules"
+    ]
 }
