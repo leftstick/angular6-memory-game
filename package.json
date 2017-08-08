@@ -1,17 +1,18 @@
 {
   "name": "angular2-memory-game",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A tiny game written in `angular2`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
-    "deploy": "rm -rf build aot && ngc -p tsconfig.aot.json && webpack --config webpack.config.prod.js && git checkout gh-pages && rm -f *.* && mv build/* ."
+    "start": "ng serve",
+    "build": "ng build",
+    "lint": "ng lint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leftstick/angular2-memory-game.git"
   },
   "keywords": [
-    "angular2",
+    "angular",
     "memory-game"
   ],
   "author": "Howard.Zuo",
@@ -21,31 +22,29 @@
   },
   "homepage": "https://github.com/leftstick/angular2-memory-game#readme",
   "dependencies": {
-    "@angular-redux/store": "^6.5.2",
-    "@angular/animations": "^4.2.3",
-    "@angular/common": "^4.2.3",
-    "@angular/compiler": "^4.2.3",
-    "@angular/compiler-cli": "^4.2.3",
-    "@angular/core": "^4.2.3",
-    "@angular/platform-browser": "^4.2.3",
-    "@angular/platform-browser-dynamic": "^4.2.3",
-    "@angular/platform-server": "^4.2.3",
-    "@angular/router": "^4.2.3",
-    "core-js": "^2.4.1",
-    "redux": "^3.7.0",
-    "rxjs": "^5.4.1",
-    "zone.js": "^0.8.12"
+    "@angular-redux/store": "^6.5.7",
+    "@angular/animations": "^4.3.3",
+    "@angular/common": "^4.3.3",
+    "@angular/compiler": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "@angular/forms": "^4.3.3",
+    "@angular/http": "^4.3.3",
+    "@angular/platform-browser": "^4.3.3",
+    "@angular/platform-browser-dynamic": "^4.3.3",
+    "@angular/router": "^4.3.3",
+    "core-js": "^2.5.0",
+    "redux": "^3.7.2",
+    "rxjs": "^5.4.2",
+    "zone.js": "^0.8.16"
   },
   "devDependencies": {
-    "@types/node": "^8.0.1",
-    "file-loader": "^0.11.2",
-    "html-webpack-plugin": "^2.28.0",
-    "ts-loader": "^2.1.0",
-    "tslint": "^5.4.3",
-    "tslint-loader": "^3.5.3",
-    "typescript": "^2.3.4",
-    "webpack": "^3.0.0",
-    "webpack-dev-server": "^2.5.0",
-    "webpack-merge": "^4.1.0"
+    "@angular/cli": "1.2.7",
+    "@angular/compiler-cli": "^4.3.3",
+    "@angular/language-service": "^4.3.3",
+    "@types/node": "~8.0.19",
+    "codelyzer": "~3.1.2",
+    "ts-node": "~3.3.0",
+    "tslint": "~5.6.0",
+    "typescript": "~2.4.2"
   }
 }

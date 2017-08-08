@@ -1,98 +1,28 @@
-angular2-memory-game
-==================
-![][david-url]
-![][license-url]
+# MyApp
 
-A tiny game written in `angular2`. It's inspired by IgorMinar's [Memory-Game](https://github.com/IgorMinar/Memory-Game). You can view the online demo [here](https://leftstick.github.io/angular2-memory-game).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.7.
 
-We choose [webpack](https://webpack.js.org/) as bundling tool taking the place of `System.js`.
+## Development server
 
-## Components Tree ##
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-![](https://raw.githubusercontent.com/leftstick/angular2-memory-game/master/doc/img/components.png)
+## Code scaffolding
 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Components break down ##
+## Build
 
-1. `memory-game`, the whole game view
-2. `dashboard`, the panel on the top, including "logo", "remains", "top"
-3. `logo`, on the left of `dashboard`, showing the game Logo
-4. `info-board`, on the center of `dashboard`, showing the current matching information(`Remains`)
-5. `info-board`, on the right of `dashboard`, showing the best result(`Top`)
-6. `chessboard`, on the center of `memory-game` view, the playing area
-7. `card`, each card in the `chessboard`
-8. `status`, the footer part, displaying current status of game
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## File Structure ##
+## Running unit tests
 
-```
-angular2-memory-game
-├── img
-│   ├── ...
-│   └── zeppelin.png
-├── ts
-│   ├── core
-│   │   ├── declare
-│   │   │   └── static.ts
-│   │   ├── ext
-│   │   │   ├── polyfills.ts
-│   │   │   └── vendor.ts
-│   │   └── helper
-│   │       ├── array.ts
-│   │       ├── event.ts
-│   │       └── object.ts
-│   ├── game
-│   │   ├── components
-│   │   │   ├── chessboard
-│   │   │   │   ├── card.co.ts
-│   │   │   │   └── index.ts
-│   │   │   ├── dashboard
-│   │   │   │   ├── info.board.co.ts
-│   │   │   │   ├── logo.co.ts
-│   │   │   │   └── index.ts
-│   │   │   └── status
-│   │   │       └── index.ts
-│   │   ├── memory.game.co.ts
-│   │   └── index.ts
-│   ├──store
-│   │   ├── action
-│   │   │   └── index.ts
-│   │   ├── index.ts
-│   │   ├── model
-│   │   │   ├── card.ts
-│   │   │   ├── state.ts
-│   │   │   └── status.ts
-│   │   └── reducer
-│   │       └── index.ts
-│   └── index.ts
-├── index.html
-├── package.json
-├── tsconfig.json
-├── webpack.config.common.js
-├── webpack.config.js
-└── webpack.config.prod.js
-```
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Want to try locally? ##
+## Running end-to-end tests
 
-```bash
-#cloning code
-git clone https://github.com/leftstick/angular2-memory-game.git
-cd angular2-memory-game
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-#install dependencies
-npm install
-#start debug server
-npm start
-```
+## Further help
 
-Now, view the demo at [http://localhost:8080](http://localhost:8080)
-
-
-## LICENSE ##
-
-[MIT License](https://raw.githubusercontent.com/leftstick/angular2-memory-game/master/LICENSE)
-
-
-[david-url]: https://david-dm.org/leftstick/angular2-memory-game.png
-[license-url]: https://img.shields.io/github/license/leftstick/angular2-memory-game.svg
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
