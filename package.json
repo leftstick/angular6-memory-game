@@ -5,6 +5,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
+    "dist": "ng build --aot=true --sourcemaps=false -vendor-chunk=true --target=production --environment=prod",
     "lint": "ng lint"
   },
   "repository": {
