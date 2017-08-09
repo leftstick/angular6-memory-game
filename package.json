@@ -5,7 +5,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "dist": "ng build --aot=true --sourcemaps=false -vendor-chunk=true --target=production --environment=prod",
+    "dist": "ng build --aot -vendor-chunk --target production --environment prod",
     "lint": "ng lint"
   },
   "repository": {
@@ -42,7 +42,7 @@
     "@angular/cli": "1.2.7",
     "@angular/compiler-cli": "^4.3.3",
     "@angular/language-service": "^4.3.3",
-    "@types/node": "~8.0.19",
+    "@types/node": "~8.0.20",
     "codelyzer": "~3.1.2",
     "ts-node": "~3.3.0",
     "tslint": "~5.6.0",
