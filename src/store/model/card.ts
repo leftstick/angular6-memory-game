@@ -5,7 +5,7 @@ const CARD_NAMES = ['8-ball', 'baked-potato', 'dinosaur', 'kronos', 'rocket', 's
 export const CARDS: Array<ICard> = CARD_NAMES.map(n => ({
     name: n,
     flipped: false,
-    url: `assets/${name}.png`
+    url: `assets/${n}.png`
 }));
 
 const CARDS_WITHOUT_BACK = CARDS.filter(c => c.name !== 'back');
