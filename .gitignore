@@ -2,7 +2,8 @@
 node_modules/
 npm-debug.log
 
-#build
-build/
-aot/
-ts/
+#dist
+dist
+
+#resource
+assets/
