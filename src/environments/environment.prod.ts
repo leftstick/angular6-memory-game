@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  deployUrl: '/angular2-memory-game/'
 };
