@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { GameActions } from './store/action';
-import { STATUS } from './store/model/status';
+import { GameActions } from '../store/action';
+import { STATUS } from '../store/interface';
 
 @Component({
     selector: 'memory-game',

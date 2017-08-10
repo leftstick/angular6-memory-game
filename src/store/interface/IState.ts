@@ -1,5 +1,5 @@
-import { STATUS } from '../model/status';
-import { ICard } from '../model/card';
+import { STATUS } from './status';
+import { ICard } from './ICard';
 
 export interface IState {
     remains?: number;

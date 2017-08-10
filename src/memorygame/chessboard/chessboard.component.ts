@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { select } from '@angular-redux/store';
 import { Observable } from 'rxjs/Observable';
 
-import { GameActions } from '../store/action';
-import { ICard } from '../store/model/card';
+import { GameActions } from '../../store/action';
+import { ICard } from '../../store/interface';
 
 @Component({
     selector: 'chessboard',

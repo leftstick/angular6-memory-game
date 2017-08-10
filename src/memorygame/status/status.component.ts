@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { select } from '@angular-redux/store';
 import { Observable } from 'rxjs/Observable';
 
-import { GameActions } from '../store/action';
-import { stop } from '../helper/event';
-import { STATUS } from '../store/model/status';
+import { GameActions } from '../../store/action';
+import { stop } from '../../helper/event';
+import { STATUS } from '../../store/interface';
 
 @Component({
     selector: 'status',

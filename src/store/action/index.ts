@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { NgRedux } from '@angular-redux/store';
 
 import { isEmpty } from '../../helper/object';
-import { IState } from '../model/state';
-import { STATUS } from '../model/status';
-import { ICard } from '../model/card';
+import { IState, STATUS, ICard } from '../interface';
 
 @Injectable()
 export class GameActions {

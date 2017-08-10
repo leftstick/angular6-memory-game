@@ -1,6 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-import { ICard, CARDS } from '../store/model/card';
+import { CARDS } from '../../store/model/card';
+import { ICard } from '../../store/interface';
 
 @Component({
     selector: 'card',

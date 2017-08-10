@@ -1,9 +1,8 @@
 import { combineReducers } from 'redux';
 import { shuffle } from '../../helper/array';
 import { isEmpty, isUndefined } from '../../helper/object';
-import { STATUS } from '../model/status';
-import { duplicateCards, ICard } from '../model/card';
-import { IState } from '../model/state';
+import { STATUS, ICard, IState } from '../interface';
+import { getGameCards } from '../model/card';
 import { GameActions } from '../action';
 
 export const rootReducer = combineReducers<IState>({
@@ -15,7 +14,7 @@ export const rootReducer = combineReducers<IState>({
     elapsedMs: elapsedReducer
 });
 
-export function remainReducer(state: Number, action: any) {
+export function remainReducer(state: number, action: any) {
     if (action.type === GameActions.RESET || isEmpty(state)) {
         return 8;
     }
@@ -25,7 +24,7 @@ export function remainReducer(state: Number, action: any) {
     return state;
 }
 
-export function speedReducer(state: Number, action: any) {
+export function speedReducer(state: number, action: any) {
     if (action.type === GameActions.RESET || isEmpty(state)) {
         return localStorage.getItem('highestSpeed') || 9999;
     }
@@ -52,7 +51,7 @@ export function statusReducer(state: STATUS, action: any) {
 
 export function cardsReducer(state: ICard[], action: any) {
     if (action.type === GameActions.RESET || isEmpty(state)) {
-        return shuffle(duplicateCards());
+        return shuffle(getGameCards());
     }
     if (action.type === GameActions.UPDATE_CARD_FLIPPED) {
         return state.map(c => c._id === action.payload._id ? { _id: c._id, name: c.name, flipped: !c.flipped, url: c.url } : c);
@@ -70,7 +69,7 @@ export function lastSelectedCardReducer(state: ICard, action: any) {
     return state;
 }
 
-export function elapsedReducer(state: Number, action: any) {
+export function elapsedReducer(state: number, action: any) {
     if (action.type === GameActions.RESET || isEmpty(state)) {
         return 0;
     }
