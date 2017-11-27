@@ -1,15 +1,15 @@
-angular2-memory-game
+angular5-memory-game
 ==================
 ![][david-url]
 ![][license-url]
 
-A tiny game written in `angular`(version >= 2). It's inspired by IgorMinar's [Memory-Game](https://github.com/IgorMinar/Memory-Game). You can view the online demo [here](https://leftstick.github.io/angular2-memory-game).
+A tiny game written in `angular`(version >= 2). It's inspired by IgorMinar's [Memory-Game](https://github.com/IgorMinar/Memory-Game). You can view the online demo [here](https://leftstick.github.io/angular5-memory-game).
 
 We choose [@angular/cli](https://www.npmjs.com/package/@angular/cli) as default build tool.
 
 ## Components Tree ##
 
-![](https://raw.githubusercontent.com/leftstick/angular2-memory-game/master/doc/img/components.png)
+![](https://raw.githubusercontent.com/leftstick/angular5-memory-game/master/doc/img/components.png)
 
 
 ## Components break down ##
@@ -26,7 +26,7 @@ We choose [@angular/cli](https://www.npmjs.com/package/@angular/cli) as default 
 ## File Structure ##
 
 ```
-angular2-memory-game
+angular5-memory-game
 ├── assets
 │   ├── 8-ball.png
 │   ├── ...
@@ -90,8 +90,8 @@ angular2-memory-game
 
 ```bash
 #cloning code
-git clone https://github.com/leftstick/angular2-memory-game.git
-cd angular2-memory-game
+git clone https://github.com/leftstick/angular5-memory-game.git
+cd angular5-memory-game
 
 #install dependencies
 npm intall
@@ -104,8 +104,8 @@ Now, view the demo at [http://localhost:4200](http://localhost:4200)
 
 ## LICENSE ##
 
-[MIT License](https://raw.githubusercontent.com/leftstick/angular2-memory-game/master/LICENSE)
+[MIT License](https://raw.githubusercontent.com/leftstick/angular5-memory-game/master/LICENSE)
 
 
-[david-url]: https://david-dm.org/leftstick/angular2-memory-game.png
-[license-url]: https://img.shields.io/github/license/leftstick/angular2-memory-game.svg
+[david-url]: https://david-dm.org/leftstick/angular5-memory-game.png
+[license-url]: https://img.shields.io/github/license/leftstick/angular5-memory-game.svg

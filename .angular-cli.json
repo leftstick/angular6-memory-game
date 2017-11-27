@@ -1,24 +1,20 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular-memory-game"
+    "name": "angular5-memory-game"
   },
   "apps": [
     {
       "root": "src",
       "outDir": "dist",
-      "deployUrl": "/angular2-memory-game/",
-      "assets": [
-        "assets"
-      ],
+      "deployUrl": "/angular5-memory-game/",
+      "assets": ["assets"],
       "index": "index.html",
       "main": "index.ts",
       "polyfills": "polyfills.ts",
       "tsconfig": "tsconfig.json",
       "prefix": "memory",
-      "styles": [
-        "index.css"
-      ],
+      "styles": ["index.css"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
