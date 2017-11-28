@@ -5,6 +5,10 @@ angular5-memory-game
 
 A tiny game written in `angular`(version >= 2). It's inspired by IgorMinar's [Memory-Game](https://github.com/IgorMinar/Memory-Game). You can view the online demo [here](https://leftstick.github.io/angular5-memory-game).
 
+>If you are looking for `vue2` version, check it [here](https://github.com/leftstick/vue-memory-game)
+
+>If you are looking for `react` version, check it [here](https://github.com/leftstick/react-memory-game)
+
 We choose [@angular/cli](https://www.npmjs.com/package/@angular/cli) as default build tool.
 
 ## Components Tree ##
