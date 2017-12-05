@@ -1,21 +1,21 @@
 {
   "name": "angular5-memory-game",
   "version": "1.0.0",
-  "description":
-    "A tiny game written in `angular5`. It's inspired by IgorMinar's Memory-Game",
+  "description": "A tiny game written in `angular5`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
     "start": "ng serve",
-    "dist":
-      "ng build --aot -vendor-chunk --target production --environment prod",
-    "deploy":
-      "rm -rf dist && npm run dist && git checkout gh-pages && rm -rf *.* assets && mv dist/* .",
+    "dist": "ng build --aot -vendor-chunk --target production --environment prod",
+    "deploy": "rm -rf dist && npm run dist && git checkout gh-pages && rm -rf *.* assets && mv dist/* .",
     "lint": "ng lint"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leftstick/angular5-memory-game.git"
   },
-  "keywords": ["angular", "memory-game"],
+  "keywords": [
+    "angular",
+    "memory-game"
+  ],
   "author": "Howard.Zuo",
   "license": "MIT",
   "bugs": {
@@ -23,21 +23,21 @@
   },
   "homepage": "https://github.com/leftstick/angular5-memory-game#readme",
   "dependencies": {
-    "@angular-redux/store": "^6.6.0",
-    "@angular/common": "^5.0.3",
-    "@angular/compiler": "^5.0.3",
-    "@angular/core": "^5.0.3",
-    "@angular/platform-browser": "^5.0.3",
-    "@angular/platform-browser-dynamic": "^5.0.3",
+    "@angular-redux/store": "^7.0.1",
+    "@angular/common": "^5.0.5",
+    "@angular/compiler": "^5.0.5",
+    "@angular/core": "^5.0.5",
+    "@angular/platform-browser": "^5.0.5",
+    "@angular/platform-browser-dynamic": "^5.0.5",
     "core-js": "^2.5.1",
     "redux": "^3.7.2",
-    "rxjs": "^5.5.2",
+    "rxjs": "^5.5.3",
     "zone.js": "^0.8.18"
   },
   "devDependencies": {
-    "@angular/cli": "1.5.4",
-    "@angular/compiler-cli": "^5.0.3",
-    "@types/node": "~8.0.53",
+    "@angular/cli": "1.5.5",
+    "@angular/compiler-cli": "^5.0.5",
+    "@types/node": "~8.0.54",
     "codelyzer": "~4.0.1",
     "tslint": "~5.8.0",
     "typescript": "2.4.2"
