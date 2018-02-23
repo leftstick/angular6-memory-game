@@ -1,28 +1,28 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core'
 
-import { CARDS } from '../../store/model/card';
-import { ICard } from '../../store/interface';
+import { CARDS } from '../../store/model/card'
+import { ICard } from '../../store/interface'
 
 @Component({
-    selector: 'card',
-    templateUrl: './card.component.html',
-    styleUrls: ['./card.component.css']
+  selector: 'card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-    @Input() info: ICard;
+  @Input() info: ICard
 
-    @Output() flipped = new EventEmitter();
+  @Output() flipped = new EventEmitter()
 
-    backCard: ICard;
+  backCard: ICard
 
-    constructor() {
-        this.backCard = CARDS.find(c => c.name === 'back');
+  constructor() {
+    this.backCard = CARDS.find(c => c.name === 'back')
+  }
+
+  flip(info: ICard) {
+    if (info.flipped) {
+      return
     }
-
-    flip(info: ICard) {
-        if (info.flipped) {
-            return;
-        }
-        this.flipped.emit(info);
-    }
+    this.flipped.emit(info)
+  }
 }

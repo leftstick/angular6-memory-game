@@ -4,7 +4,7 @@
   "description": "A tiny game written in `angular5`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
     "start": "ng serve",
-    "dist": "ng build --aot -vendor-chunk --target production --environment prod",
+    "dist": "ng build --aot -vendor-chunk --target production --environment prod --deploy-url /angular5-memory-game/",
     "deploy": "rm -rf dist && npm run dist && git checkout gh-pages && rm -rf *.* assets && mv dist/* .",
     "lint": "ng lint"
   },
@@ -12,10 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/leftstick/angular5-memory-game.git"
   },
-  "keywords": [
-    "angular",
-    "memory-game"
-  ],
+  "keywords": ["angular", "memory-game"],
   "author": "Howard.Zuo",
   "license": "MIT",
   "bugs": {
@@ -23,23 +20,23 @@
   },
   "homepage": "https://github.com/leftstick/angular5-memory-game#readme",
   "dependencies": {
-    "@angular-redux/store": "^7.0.1",
-    "@angular/common": "^5.0.5",
-    "@angular/compiler": "^5.0.5",
-    "@angular/core": "^5.0.5",
-    "@angular/platform-browser": "^5.0.5",
-    "@angular/platform-browser-dynamic": "^5.0.5",
-    "core-js": "^2.5.1",
+    "@angular-redux/store": "^7.1.0",
+    "@angular/common": "^5.2.6",
+    "@angular/compiler": "^5.2.6",
+    "@angular/core": "^5.2.6",
+    "@angular/platform-browser": "^5.2.6",
+    "@angular/platform-browser-dynamic": "^5.2.6",
+    "core-js": "^2.5.3",
     "redux": "^3.7.2",
-    "rxjs": "^5.5.3",
-    "zone.js": "^0.8.18"
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.20"
   },
   "devDependencies": {
-    "@angular/cli": "1.5.5",
-    "@angular/compiler-cli": "^5.0.5",
-    "@types/node": "~8.0.54",
-    "codelyzer": "~4.0.1",
-    "tslint": "~5.8.0",
-    "typescript": "2.4.2"
+    "@angular/cli": "1.7.1",
+    "@angular/compiler-cli": "^5.2.6",
+    "@types/node": "~9.4.6",
+    "codelyzer": "~4.1.0",
+    "tslint": "~5.9.1",
+    "typescript": "2.6.2"
   }
 }

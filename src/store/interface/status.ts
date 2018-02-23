@@ -1,6 +1,5 @@
-
 export enum STATUS {
-    READY,
-    PLAYING,
-    PASS
+  READY,
+  PLAYING,
+  PASS
 }
