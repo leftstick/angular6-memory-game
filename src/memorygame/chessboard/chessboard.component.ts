@@ -1,12 +1,12 @@
 import { Component } from '@angular/core'
 import { select } from '@angular-redux/store'
-import { Observable } from 'rxjs/Observable'
+import { Observable } from 'rxjs'
 
 import { GameActions } from '../../store/action'
 import { ICard } from '../../store/interface'
 
 @Component({
-  selector: 'chessboard',
+  selector: 'app-chessboard',
   templateUrl: './chessboard.component.html',
   styleUrls: ['./chessboard.component.css']
 })

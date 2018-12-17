@@ -4,7 +4,7 @@ import { CARDS } from '../../store/model/card'
 import { ICard } from '../../store/interface'
 
 @Component({
-  selector: 'card',
+  selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })

@@ -4,7 +4,7 @@ import { GameActions } from '../store/action'
 import { STATUS } from '../store/interface'
 
 @Component({
-  selector: 'memory-game',
+  selector: 'app-memory-game',
   templateUrl: './memory.component.html',
   styleUrls: ['./memory.component.css']
 })
