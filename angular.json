@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular5-memory-game",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/index.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,8 +28,14 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/index.html",
+                  "with": "src/index.prod.html"
                 }
               ],
+              "deployUrl": "/angular5-memory-game/",
+              "baseHref": "/angular5-memory-game/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
