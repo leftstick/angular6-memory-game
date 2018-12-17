@@ -4,8 +4,8 @@
   "description": "A tiny game written in `angular5`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
     "start": "ng serve",
-    "dist": "ng build --configuration=production",
-    "deploy": "rm -rf dist && npm run dist && git checkout gh-pages && rm -rf *.* assets && mv dist/* .",
+    "build": "ng build --configuration=production",
+    "deploy": "npm run build && gh-pages -d dist",
     "lint": "ng lint"
   },
   "repository": {
@@ -40,6 +40,7 @@
     "@angular/compiler-cli": "^6.1.10",
     "@types/node": "~10.12.15",
     "codelyzer": "~4.5.0",
+    "gh-pages": "^2.0.1",
     "tslint": "~5.11.0",
     "typescript": "~2.9.2"
   }
