@@ -1,22 +1,21 @@
-angular5-memory-game
-==================
+# angular6-memory-game
+
 ![][david-url]
 ![][license-url]
 
-A tiny game written in `angular`(version >= 2). It's inspired by IgorMinar's [Memory-Game](https://github.com/IgorMinar/Memory-Game). You can view the online demo [here](https://leftstick.github.io/angular5-memory-game).
+A tiny game written in `angular`(version >= 2). It's inspired by IgorMinar's [Memory-Game](https://github.com/IgorMinar/Memory-Game). You can view the online demo [here](https://leftstick.github.io/angular6-memory-game).
 
->If you are looking for `vue2` version, check it [here](https://github.com/leftstick/vue-memory-game)
+> If you are looking for `vue2` version, check it [here](https://github.com/leftstick/vue-memory-game)
 
->If you are looking for `react` version, check it [here](https://github.com/leftstick/react-memory-game)
+> If you are looking for `react` version, check it [here](https://github.com/leftstick/react-memory-game)
 
 We choose [@angular/cli](https://www.npmjs.com/package/@angular/cli) as default build tool.
 
-## Components Tree ##
+## Components Tree
 
-![](https://raw.githubusercontent.com/leftstick/angular5-memory-game/master/doc/img/components.png)
+![](https://raw.githubusercontent.com/leftstick/angular6-memory-game/master/doc/img/components.png)
 
-
-## Components break down ##
+## Components break down
 
 1. `memory-game`, the whole game view
 2. `dashboard`, the panel on the top, including "logo", "remains", "top"
@@ -27,10 +26,10 @@ We choose [@angular/cli](https://www.npmjs.com/package/@angular/cli) as default 
 7. `card`, each card in the `chessboard`
 8. `status`, the footer part, displaying current status of game
 
-## File Structure ##
+## File Structure
 
 ```
-angular5-memory-game
+angular6-memory-game
 ├── assets
 │   ├── 8-ball.png
 │   ├── ...
@@ -90,12 +89,12 @@ angular5-memory-game
 └── typings.d.ts
 ```
 
-## Want to try locally? ##
+## Want to try locally?
 
 ```bash
 #cloning code
-git clone https://github.com/leftstick/angular5-memory-game.git
-cd angular5-memory-game
+git clone https://github.com/leftstick/angular6-memory-game.git
+cd angular6-memory-game
 
 #install dependencies
 npm intall
@@ -105,11 +104,9 @@ npm start
 
 Now, view the demo at [http://localhost:4200](http://localhost:4200)
 
+## LICENSE
 
-## LICENSE ##
+[MIT License](https://raw.githubusercontent.com/leftstick/angular6-memory-game/master/LICENSE)
 
-[MIT License](https://raw.githubusercontent.com/leftstick/angular5-memory-game/master/LICENSE)
-
-
-[david-url]: https://david-dm.org/leftstick/angular5-memory-game.png
-[license-url]: https://img.shields.io/github/license/leftstick/angular5-memory-game.svg
+[david-url]: https://david-dm.org/leftstick/angular6-memory-game.png
+[license-url]: https://img.shields.io/github/license/leftstick/angular6-memory-game.svg

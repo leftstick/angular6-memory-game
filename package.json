@@ -1,5 +1,5 @@
 {
-  "name": "angular5-memory-game",
+  "name": "angular6-memory-game",
   "version": "1.0.0",
   "description": "A tiny game written in `angular5`. It's inspired by IgorMinar's Memory-Game",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leftstick/angular5-memory-game.git"
+    "url": "git+https://github.com/leftstick/angular6-memory-game.git"
   },
   "keywords": [
     "angular",
@@ -19,9 +19,9 @@
   "author": "Howard.Zuo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/leftstick/angular5-memory-game/issues"
+    "url": "https://github.com/leftstick/angular6-memory-game/issues"
   },
-  "homepage": "https://github.com/leftstick/angular5-memory-game#readme",
+  "homepage": "https://github.com/leftstick/angular6-memory-game#readme",
   "dependencies": {
     "@angular-redux/store": "^9.0.0",
     "@angular/common": "^6.1.10",

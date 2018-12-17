@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular5-memory-game": {
+    "angular6-memory-game": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -34,8 +34,8 @@
                   "with": "src/index.prod.html"
                 }
               ],
-              "deployUrl": "/angular5-memory-game/",
-              "baseHref": "/angular5-memory-game/",
+              "deployUrl": "/angular6-memory-game/",
+              "baseHref": "/angular6-memory-game/",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular5-memory-game:build"
+            "browserTarget": "angular6-memory-game:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular5-memory-game:build:production"
+              "browserTarget": "angular6-memory-game:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular5-memory-game:build"
+            "browserTarget": "angular6-memory-game:build"
           }
         },
         "lint": {
@@ -82,5 +82,5 @@
       }
     }
   },
-  "defaultProject": "angular5-memory-game"
+  "defaultProject": "angular6-memory-game"
 }
