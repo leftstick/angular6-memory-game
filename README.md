@@ -106,7 +106,7 @@ Now, view the demo at [http://localhost:4200](http://localhost:4200)
 
 ## LICENSE
 
-[MIT License](https://raw.githubusercontent.com/leftstick/angular6-memory-game/master/LICENSE)
+[GPL-3.0 License](https://raw.githubusercontent.com/leftstick/angular6-memory-game/master/LICENSE)
 
 [david-url]: https://david-dm.org/leftstick/angular6-memory-game.png
 [license-url]: https://img.shields.io/github/license/leftstick/angular6-memory-game.svg
